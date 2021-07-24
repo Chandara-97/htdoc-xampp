@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute and Class Binding</title>
+</head>
+<style>
+    .background-color{
+        background:red
+    }
+    .color-blue{
+        color:blue
+    }
+</style>
+<body>
+<div id="root">
+    <h1>Raw Working</h1>
+    <h4>{{message.split("").reverse().join()}}</h4>
+    <h1>Compute Attribute</h1>
+    <h4>{{reverseMessage}}</h4>
+    <br><br>
+    <h1>All The Task</h1>
+    <ol>
+        <li v-for="task in tasks" v-text="task.description"></li>
+    </ol>
+    <h1>Done Task</h1>
+    <ol>
+        <li v-for="task in tasks" v-if="task.completed" v-text="task.description"></li>
+    </ol>
+    <h1>Don't Done Task</h1>
+    <ol>
+        <li v-for="task in tasks" v-if="!task.completed" v-text="task.description"></li>
+    </ol>
+    <h1>Don't Done Task Compute</h1>
+    <ol>
+        <li v-for="task in incompleteTasks" v-text="task.description"></li>
+    </ol>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+
+        el:'#root',
+        data:{
+            message: "hello world",
+            tasks:[
+                {description:"Go to the store",completed: true},
+                {description:"Finish Screencast",completed: false},
+                {description:"Make donation",completed: false},
+                {description:"Clear inbox",completed: true},
+                {description:"Make dinner",completed: false},
+                {description:"Clean Room",completed: true},
+                {description:"Clean bathroom",completed: true},
+            ],
+        },
+        computed:{
+            reverseMessage(){
+                return this.message.split('').reverse().join('');
+            },
+            incompleteTasks(){
+                return this.tasks.filter(task =>! task.completed);
+
+                // this.tasks.filter(function (task){
+                //     return !task.completed;
+                // });
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

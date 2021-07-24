@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute and Class Binding</title>
+</head>
+<style>
+    .background-color{
+        background:red
+    }
+    .color-blue{
+        color:blue
+    }
+</style>
+<body>
+<div id="root">
+
+    <h1 :class="className">{{title}}</h1>
+    <button :class="className[0]"> Toggle Me</button>
+    <br>
+    <br>
+    <h2>Fix Toggle Click</h2>
+    <button :class="{'background-color':fixtoggle}" @click="fixtoggleClass"> Toggle Me</button>
+    <br><br>
+    <button  @click="fixtoggleClass" :disabled=" "> Toggle Me</button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+
+        el:'#root',
+        data:{
+            title: "hello my friend",
+            className: ['background-color',['color-blue']],
+            fixtoggle: false,
+        },
+        method:{
+            fixtoggleClass(){
+                this.fixtoggle = true
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

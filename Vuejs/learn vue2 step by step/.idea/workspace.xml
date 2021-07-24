@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0cd42666-2e96-4ae4-9c03-c0680fd3cd42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/5 Attribute and Class Binding/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6 The Need for Computed Properties/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7 Components 101/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7 Components 101/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8 Components Within Components/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8 Components Within Components/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9 Practical Component Exercise/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9 Practical Component Exercise/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../youtube/todolistapp/resources/js/vue/app.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="HTTP Public Environment File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1vOiQB10jHJTRrj6XZyEmeSjyw2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Term6\Vuejs\learn vue2 step by step\6" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0cd42666-2e96-4ae4-9c03-c0680fd3cd42" name="Default Changelist" comment="" />
+      <created>1626439518763</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626439518763</updated>
+      <workItem from="1626439519862" duration="5505000" />
+      <workItem from="1626486441280" duration="4504000" />
+      <workItem from="1626508889854" duration="598000" />
+      <workItem from="1626510080309" duration="331000" />
+      <workItem from="1626668107290" duration="4590000" />
+      <workItem from="1626698227341" duration="31000" />
+      <workItem from="1627052274854" duration="751000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="139" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626500046531">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="139" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1626500046531" />
+    <state x="171" y="166" key="FileChooserDialogImpl" timestamp="1626510411007">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="171" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1626510411007" />
+    <state x="202" y="328" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626669932878">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="202" y="328" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1626669932878" />
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1626444554882">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1626444554882" />
+  </component>
+</project>

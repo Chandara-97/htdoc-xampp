@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+
+    <div id="root">
+        <h1>Input function with javacript</h1>
+        <ul>
+            <li v-for="name1 in names1">{{ name1 }}</li>
+        </ul>
+        <input id="input1" type="text">
+        <button id="button1">add name</button>
+
+        <h1>without {{ name }}</h1>
+
+        <ul>
+            <li v-for = "name2 in names2" v-text="name2"></li>
+        </ul>
+        <input id="input2" type="text">
+        <button id="button2">add name</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:'#root',
+            data:{
+                names1:['leav','chan','dara'],
+                names2:['leav','chan','dara']
+            }
+            // mounted() {
+                
+            // },
+        });
+
+        const button1 = document.querySelector('#button1')
+        const input1 = document.querySelector('#input1')
+        button1.addEventListener('click', ()=>{
+            let name1 = input1
+            app.names1.push(name1.value)
+            name1.value=""
+        })
+
+        const button2 = document.querySelector('#button2')
+        const input2 = document.querySelector('#input2')
+        button2.addEventListener('click', ()=>{
+            let name2 = input2
+            app.names2.push(name2.value)
+            name2.value=""
+        })
+    </script>
+</body>
+</html>

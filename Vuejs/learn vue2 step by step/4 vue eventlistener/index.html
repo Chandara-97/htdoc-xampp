@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Eventlistener</title>
+</head>
+<body>
+
+    <div id="root">
+        <h1>Add Name</h1>
+        <ul>
+            <li v-for = "name1 in names1" v-text="name1"></li>
+        </ul>
+        <input  type="text" v-model="newName" >
+        <button @click ="addName">add name</button>
+
+        <h2>Use key Up vue </h2>
+        <ul>
+            <li v-for = "name2 in names2" v-text="name2"></li>
+        </ul>
+        <input type="text" v-model="keyupname" v-on:keyup="keyup">
+        <button @click ="keyup">add name</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+
+            el:'#root',
+            data:{
+                newName:'',
+                keyupname:'',
+                names1:['leav1','chan1','dara1'],
+                names2:['leav2','chan2','dara2']
+            },
+
+            methods:{
+                addName(){
+                    this.names1.push(this.newName)
+                    this.newName=""
+                },
+                keyup(){
+                    this.names2.push(this.keyupname)
+                    this.keyupname=""
+                }
+            },
+        });
+
+    </script>
+</body>
+</html>
